@@ -1,0 +1,207 @@
+*, html *{
+  margin: 0;
+  padding:0;
+  list-style:none;
+}
+
+body{
+  color:white;
+  font-family: montserrat;
+  background-color: black;
+}
+
+
+/* header */
+header {
+  font-size: 20px;
+
+  padding:1rem 0rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact{
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+  height:2rem;
+}
+
+.contact img{
+  width: 2rem;
+}
+
+.header-nav ul{
+  display: flex;
+  column-gap: 3rem;
+}
+
+a {
+  color:white;
+  text-decoration: none;
+}
+
+
+
+/* strong-family img */
+
+.header-sf{
+  background-image: url(/styles/assets/head-sf.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height:80vh;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.26);
+  
+}
+
+/* button  more*/
+.btn-more {
+  border: none;
+  font-size: 20px;
+  align-self: flex-end;
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right:auto ;
+
+}
+
+.btn-more button {
+  background-color: transparent;
+  color: white;
+  opacity: 0.8;
+  padding:20px;
+  font-size: 2rem;
+
+  border:none;
+
+}
+
+.btn-more button:hover{
+  opacity: 1;
+  transition:0.3s;
+}
+
+
+
+/* next button */
+.team-carousel .arrow {
+  height:fit-content;
+  align-self: center;
+  margin: 1rem;
+  width:55px;
+  height:55px;
+  border: none;
+  border-radius: 35px;
+  opacity:0.1;
+  font-size: 20px;
+
+  background-color: white;
+  color:rgb(0, 0, 0);
+  
+}
+
+.team-carousel:hover .arrow{
+  opacity: 0.3; 
+  transition: 1s;
+} 
+
+
+/*  */
+/* inder.css */
+.about-us {
+  padding:7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #5A4456;
+}
+
+.about-us h3 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.about-us p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  line-height: 2rem;
+  width: 60%;
+}
+
+/*  */
+/* prices */
+
+
+.prices-display h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin:3rem;
+  text-align: center;
+}
+
+.prices .arrow {
+  opacity: 1;
+  width:3rem;
+  height:3rem;
+  padding:1rem;
+}
+
+.prices .arrow {
+  height:fit-content;
+  align-self: center;
+  margin: 1rem;
+  width:55px;
+  height:55px;
+  border: none;
+  border-radius: 35px;
+  opacity:0.4;
+  font-size: 20px;
+
+  background-color: white;
+  color:rgb(0, 0, 0);
+  
+}
+
+/* button */
+.team-carousel:hover .arrow{
+  opacity: 0.3; 
+  transition: 1s;
+} 
+
+/* images */
+
+
+/*  */
+/* team */
+.team {
+  margin-top:7rem;
+  margin-bottom:7rem;
+}
+
+.team h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin:3rem;
+  text-align: center;
+}
+
+
+.team-carousel {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.persons {
+  display: flex;
+  flex-direction: row;
+}
+
+.person{
+  margin: 0 2rem;
+}

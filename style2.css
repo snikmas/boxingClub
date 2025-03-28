@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+}
+
+body {
+  background-color: black;
+  color:white;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+  color:white
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+h1 {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+
+/* ===================== HEADER ===================== */ 
+
+header {
+  padding:14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navs-header {
+  display: flex;
+  gap:10em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+}
+
+.site-nav ul{
+  font-size: 1.5em;
+  font-weight: 400;
+  gap:3rem;
+}
+
+.society-nav ul {
+  gap:2.2rem;
+  font-size: 2.3em;
+}
+
+/* ===================== ====== ===================== */ 
+/* =================  welcome-div =================== */ 
+
+.welcome-div{
+  height: 80vh;
+  margin-bottom: 3vh;
+  background-image: url(/styles/assets/head-sf01.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.26);  
+  
+  
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+#more-btn, button{
+  font-size: 2em;
+  border-radius: 100%;
+  border:none;
+  color: white;
+  padding:18px 18px;
+  width:2.4em;
+  background-color: transparent;
+
+  opacity: 0.2;
+  transition:
+  all 400ms,
+  opacity 600ms;
+  
+}
+
+#more-btn:hover, button:hover{
+  opacity: 0.2;
+  background-color: gray;
+}
+
+/* ================================================= */ 
+/* ===================== aboutUs =================== */ 
+
+.aboutUs-div{
+
+  padding: 100px 0px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  background-color: #5a445684;
+
+}
+
+.aboutUs-text{
+  width:900px
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 2.9em;
+  line-height: 2em;
+  letter-spacing: 1px;
+}
+
+.aboutUs-text p {
+  font-size: 1.4em;
+  font-weight: 200;
+  line-height: 1.4em;
+
+}
+
+/* ================================================= */ 
+/* ===================== OurTeam =================== */ 
+
+.ourTeam-div{
+
+  padding:10vh 0;
+
+  text-align: center;
+}
+
+.ourTeam-div h3 {
+  line-height: 3em;
+}
+
+.hero-carousel {
+  padding:3em 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+
+.team-cards {
+  display: flex;
+  gap:4em;  
+
+}
+
+.hero-card {
+
+  padding:1em;
+  display: flex;
+  flex-direction: column;
+  
+  /* border:2px solid rgba(255, 255, 255, 0.289); */
+  
+  border:2px solid rgba(255, 255, 255, 0.289);
+  
+}
+
+.hero-card img{
+  width:300px;
+  filter:brightness(90%);
+}
+
+.hero-description {
+  padding:15px 3px;
+  border-top:2px solid rgba(255, 255, 255, 0.289);
+}
+
+.hero-name{
+  font-weight: 200;
+  font-size: 1.3em;
+  line-height: 2em;
+}
+
+span {
+  font-weight: 200;
+}
+
+
+/* ================================================= */ 
+/* ===================== Gallery =================== */ 
