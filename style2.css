@@ -9,6 +9,12 @@ body {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
+h4 {
+  font-weight: 400;
+  font-size: 2.6em;
+  line-height: 0.5em;
+}
+
 
 a {
   text-decoration: none;
@@ -108,8 +114,8 @@ ul {
   justify-content: center;
   text-align: center;
 
-  background-color: #5a445684;
-
+  background-color: #997792ac;
+  
 }
 
 .aboutUs-text{
@@ -118,7 +124,7 @@ ul {
 
 h3 {
   font-weight: 300;
-  font-size: 2.9em;
+  font-size: 3.5em;
   line-height: 2em;
   letter-spacing: 1px;
 }
@@ -135,7 +141,7 @@ h3 {
 
 .ourTeam-div{
 
-  padding:10vh 0;
+  padding:15vh 0;
 
   text-align: center;
 }
@@ -196,3 +202,91 @@ span {
 
 /* ================================================= */ 
 /* ===================== Gallery =================== */ 
+
+.gallery-div {
+  padding:3vh 0;
+
+  border:2px solid darkblue;
+  text-align: center;
+}
+
+.gallery-carousel{
+
+
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gallery-cards{
+  display: flex;
+}
+
+
+
+.gallery-card img {
+  width:800px;
+
+  object-fit: cover;
+  overflow: hidden;
+}
+
+
+
+/* ====================================================== */ 
+/* ===================== Contact-Form =================== */ 
+
+
+.contact-div {
+  margin: 20vh 0;
+  background-color: #997792ac;
+}
+
+.contact-tab {
+  padding:5em 2em;
+  width: 100%;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  border:2px solid darkblue;
+ 
+}
+
+.contact-tab p {
+  font-size: 1.1em;
+  line-height: 4em;
+  padding-bottom: 1em;
+  
+}
+
+
+.contact-tab form {
+  display: flex;
+  flex-direction: column;
+  width:300px;
+  gap:1em;
+
+  align-items: center;
+
+
+}
+
+.contact-form input{
+  font-size: 1.3em;
+  padding:5px 10px;
+
+  border-radius: 100px;
+  border-bottom: 2px solid aliceblue;
+  
+  width: 100%;
+  background-color: transparent;
+}
+
+input::placeholder{
+  color:rgba(255, 255, 255, 0.607);
+
+}
