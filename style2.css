@@ -36,6 +36,14 @@ h1 {
 
 /* ===================== HEADER ===================== */ 
 
+header button {
+  border:none;
+  font-size: 1em;
+  padding:0;
+  width:fit-content;
+  opacity: 1;
+}
+
 header {
   flex-wrap: wrap;
   padding:14px 20px;
