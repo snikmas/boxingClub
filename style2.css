@@ -37,10 +37,13 @@ h1 {
 /* ===================== HEADER ===================== */ 
 
 header {
+  flex-wrap: wrap;
   padding:14px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  flex-wrap: wrap;
 }
 
 .navs-header {
@@ -65,16 +68,19 @@ ul {
   font-size: 2.3em;
 }
 
+
+
 /* ===================== ====== ===================== */ 
 /* =================  welcome-div =================== */ 
 
 .welcome-div{
+  border-top:#ff9900 4px solid;
   height: 80vh;
   margin-bottom: 3vh;
   background-image: url(/styles/assets/head-sf01.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-blend-mode: darken;
+  /* background-blend-mode: darken; */
   background-color: rgba(0, 0, 0, 0.26);  
   
   
@@ -92,16 +98,24 @@ ul {
   width:2.4em;
   background-color: transparent;
 
-  opacity: 0.2;
+  opacity: 0.9;
   transition:
-  all 400ms,
-  opacity 600ms;
+  all 200ms,
+  opacity 700ms;
+  border: #ff99009d 2px solid;
   
 }
 
 #more-btn:hover, button:hover{
-  opacity: 0.2;
-  background-color: gray;
+  opacity: 0.5;
+  /* background-color: gray; */
+}
+
+#more-btn:active, button:active{
+  transition:90ms;
+
+  transform: scale(0.88);
+  opacity: 1;
 }
 
 /* ================================================= */ 
@@ -114,7 +128,7 @@ ul {
   justify-content: center;
   text-align: center;
 
-  background-color: #997792ac;
+  background-color: #ff9900;
   
 }
 
@@ -123,7 +137,7 @@ ul {
 }
 
 h3 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 3.5em;
   line-height: 2em;
   letter-spacing: 1px;
@@ -131,7 +145,7 @@ h3 {
 
 .aboutUs-text p {
   font-size: 1.4em;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.4em;
 
 }
@@ -146,9 +160,7 @@ h3 {
   text-align: center;
 }
 
-.ourTeam-div h3 {
-  line-height: 3em;
-}
+
 
 .hero-carousel {
   padding:3em 1em;
@@ -175,7 +187,7 @@ h3 {
   
   /* border:2px solid rgba(255, 255, 255, 0.289); */
   
-  border:2px solid rgba(255, 255, 255, 0.289);
+  border:2px solid #ff9900;;
   
 }
 
@@ -186,7 +198,7 @@ h3 {
 
 .hero-description {
   padding:15px 3px;
-  border-top:2px solid rgba(255, 255, 255, 0.289);
+  border-top:2px solid #ff9900;;
 }
 
 .hero-name{
@@ -204,16 +216,16 @@ span {
 /* ===================== Gallery =================== */ 
 
 .gallery-div {
-  padding:3vh 0;
-
-  border:2px solid darkblue;
+  padding:2em 1em;
   text-align: center;
+
+}
+
+.gallery-div h3 {
+  line-height: 3em;
 }
 
 .gallery-carousel{
-
-
-
   display: flex;
 
   align-items: center;
@@ -241,7 +253,8 @@ span {
 
 .contact-div {
   margin: 20vh 0;
-  background-color: #997792ac;
+  margin-bottom: 10vh;
+  background-color: #ff9900;
 }
 
 .contact-tab {
@@ -251,8 +264,6 @@ span {
   align-items: center;
   display: flex;
   flex-direction: column;
-
-  border:2px solid darkblue;
  
 }
 
@@ -268,7 +279,7 @@ span {
   display: flex;
   flex-direction: column;
   width:300px;
-  gap:1em;
+  gap:1.4em;
 
   align-items: center;
 
@@ -277,16 +288,249 @@ span {
 
 .contact-form input{
   font-size: 1.3em;
-  padding:5px 10px;
+  padding:5px 6px;
 
-  border-radius: 100px;
+  border: none;
   border-bottom: 2px solid aliceblue;
   
   width: 100%;
   background-color: transparent;
+  color:white;
+  outline: none;
 }
 
-input::placeholder{
+input::placeholder, #form-message::placeholder{
   color:rgba(255, 255, 255, 0.607);
+}
 
+
+#form-message {
+  font-family: Montserrat;
+  font-size: 1em;
+  color:white;
+  min-width:100%;
+  max-width: 120%;
+  background-color: transparent;
+  border:none;
+  border-bottom: 2px solid aliceblue;
+  outline: none;
+}
+
+.contact-form button {
+  border:2px solid rgb(240, 248, 255);
+  border-radius: 0;
+  width:fit-content;
+  font-size: 1.2em;
+  opacity: 1;
+  margin-top:15px;
+  padding:10px 30px;
+  border-radius: 30px;
+  opacity: 0.9;
+}
+
+/* ====================================================== */ 
+/* ===================== Footer =================== */ 
+
+footer {  
+  padding: 0px 20px;
+}
+
+.up {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left{
+  display: flex;
+  flex-direction: column;
+  gap:1.2em;
+}
+
+.footer-left span{
+  color:rgba(255, 255, 255, 0.608);
+  font-weight: 600;
+}
+
+.site-map nav {
+  padding-top:10px;
+  display: flex;
+  gap:1em;  
+}
+
+.footer-right{
+  width: 230px;
+  word-wrap:break-word;
+
+}
+
+.footer-right h6 {
+  font-size: 0.9em;
+  padding-bottom:1em;
+  
+}
+
+.footer-right{
+  line-height: 1.4em;
+  opacity: 0.9;
+}
+
+hr{
+  margin:1em 0em;
+}
+
+.img {
+  align-self: center;
+}
+
+.foot-nav ul{
+  padding-left:0;
+}
+
+.down{
+  margin-bottom: 2em;
+
+}
+
+/* ====================================== */
+/* ==================== media =========== */
+@media (max-width:1000px) {
+
+  /* header */
+  h1 {
+    font-size: 1.8em;
+  }
+  a{
+    font-size: 0.9em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 0.8em !important;
+  }
+
+
+  /* our team */
+
+  button{
+    padding:10px 10px;
+  }
+
+  .hero-card img {
+    width: 100px;
+  }
+
+
+  .gallery-card img {
+    width:600px
+  }
+}
+
+/* iphone 12pro */
+@media (max-width:844px) {
+  header {
+    font-size: 80%;
+  }
+
+  .gallery-card img {
+    width:200px
+  }
+
+  h1 {
+    font-size: 1.3em;
+    padding-bottom: 0.3em;
+  }
+
+  .navs-header{
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:1em;
+
+    font-size: 80%;
+  }
+
+  .society-nav ul{
+    flex-direction: row;
+  }
+
+  header{
+    flex-direction: column;
+  }
+
+  .site-nav ul {
+    gap: 0.6em;
+  }
+  ul {
+    text-align: center;
+    flex-direction: column;
+    padding-left: 0;
+    gap:0.6em;
+  }
+
+  .welcome-div{
+    background-size: cover;
+    height:fit-content;
+  }
+
+  .welcome-div-btn button {
+    visibility: hidden;
+  }
+
+  .aboutUs-div {
+    padding: 20px 0;
+  }
+
+  .aboutUs-div {
+    font-size: 90%;
+  }
+  .aboutUs-text{
+    width: fit-content;
+    border:2px solid darkblue;
+    padding:2em 2em;
+  }
+
+  .ourTeam-div {
+    padding:0vh 0;
+    padding-top: 3vh;
+    font-size: 60%;
+  }
+
+  .team-cards{
+    gap:0.2em;
+  }
+
+  .hero-card img{
+    width: 80%;
+  }
+
+  .gallery-div {
+    padding: 0;
+    font-size: 70%;
+
+  }
+
+  
+  .contact-div{
+    margin: 10vh 0;
+    font-size: 70%;
+  }
+
+
+  footer {
+    text-align: center;
+  }
+  
+  .up{
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .foot-nav ul {
+    justify-content: center;
+  }
+
+  .site-map nav{
+    justify-content: space-evenly;
+  }
 }
