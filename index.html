@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style.css">
   <title>StrongFamily</title>
   
   <!-- awesome -->
@@ -22,10 +22,10 @@
     <div class="navs-header">
       <nav class="site-nav">
         <ul class="scroll-btns">
-          <li><button id="about-btn">About Us</button></li>
-          <li><button id="team-btn">Our Team</button></li>
-          <li><button id="gallery-btn">Gallery</button></li>
-          <li><button id="contact-btn">Contact Us</button></li>
+          <li><button class="aboutUs" id="about-btn">About Us</button></li>
+          <li><button class="ourTeam" id="team-btn">Our Team</button></li>
+          <li><button class="gallery" id="gallery-btn">Gallery</button></li>
+          <li><button class="contact" id="contact-btn">Contact Us</button></li>
         </ul>
       </nav>
       <nav class="society-nav">
@@ -48,28 +48,29 @@
         <p>Our boxing club welcomes individuals of all skill levels, from beginners to seasoned professionals. We focus on improving technique, strength, and fitness through personalized training and a supportive environment. Whether you're here for fitness or competition, our experienced trainers are dedicated to helping you achieve your goals.</p>
       </div>
     </div>
-
+  
     <div class="ourTeam-div">
         <h3>Our Team</h3>
       <div class="hero-carousel">
         <button class="left arrow"><i class="fa-solid fa-chevron-left"></i></button>
         <div class="team-cards">
           <div class="hero-card">
-            <img src="/styles/assets/islam.png" alt="islam">
+            <!-- here we can use react btw -->
+            <img src="/team/pngHeroes/makchachev.png" alt="islam">
             <div class="hero-description">
               <p class="hero-name">Islam Makchachev</p>
               <span class="hero-styles">Sambo</span>
             </div>
           </div>
           <div class="hero-card">
-            <img src="/styles/assets/nurma.png" alt="nurma">
+            <img src="/team/pngHeroes/nurmagomedov.png" alt="nurma">
             <div class="hero-description">
               <p class="hero-name">Khabib Nurmagomedov</p>
               <span class="hero-styles">Sambo</span>
             </div>
           </div>
           <div class="hero-card">
-            <img src="/styles/assets/alex.png" alt="alex">
+            <img src="/team/pngHeroes/pereira.png" alt="alex">
             <div class="hero-description">
               <p class="hero-name">Alex Pereira</p>
               <span class="hero-styles">Kickbox</span>
@@ -152,6 +153,6 @@
     </footer>
     
 
-    <script src="script.js"></script>
+    <script src="client.js"></script>
   </body>
 </html>
